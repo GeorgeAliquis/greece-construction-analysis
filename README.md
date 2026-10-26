@@ -4,6 +4,26 @@ An interactive **Power BI dashboard** exploring new building activity across Gre
 
 The project transforms ELSTAT's published Excel tables into a clean, analysis-ready dataset and makes it possible to compare construction activity at two geographic levels: **regions** and **regional units**. The current report covers **January–December 2025**; expanding it into a multi-year, monthly time-series analysis is the next major goal.
 
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Dashboard Previews](#dashboard-previews)
+- [Project Overview](#project-overview)
+- [Dashboard Features](#dashboard-features)
+  - [Visualizations](#visualizations)
+  - [Geographic Map Configuration](#geographic-map-configuration)
+  - [Interactive Controls](#interactive-controls)
+- [Data Source](#data-source)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+  - [Original vs. Cleaned Data](#original-vs-cleaned-data)
+- [Tools and Techniques](#tools-and-techniques)
+- [Roadmap / TODO](#roadmap--todo)
+- [Project Status](#project-status)
+
+---
+
 ## Dashboard previews
 
 The dashboard is presented in Greek to preserve the names of administrative areas and make the analysis accessible to a Greek-speaking audience. **Click either preview to view it at full size.**
@@ -31,6 +51,8 @@ The dashboard is presented in Greek to preserve the names of administrative area
   </tr>
 </table>
 
+---
+
 ## Project overview
 
 The analysis examines four measures of newly built properties:
@@ -43,6 +65,8 @@ The analysis examines four measures of newly built properties:
 | Total building surface area | **4,731,479 m²** |
 
 These figures describe the **2025 reporting period**, not a monthly trend. Geographic comparisons use the appropriate administrative level to avoid counting the same activity twice through both region and regional-unit rows.
+
+---
 
 ## Dashboard features
 
@@ -71,11 +95,15 @@ Geographic names are also **normalized for reliable matching** between the clean
 - **Metric selector:** Switches between **Buildings**, **Surface Area**, **Volume** and **Storeys**. It updates the geographic map, treemap and ranking chart without changing the scatter plot's two-axis comparison.
 - **Dynamic chart titles and subtitles:** Describe the current selection and explain how each visualization should be read, including the relevant measurement units.
 
+---
+
 ## Data source
 
 **Source:** [Hellenic Statistical Authority (ELSTAT)](https://www.statistics.gr/) — *New built-properties, storeys, volume and surface thereon, by region and regional unit* (Table 1, **January–December 2025**, final data).
 
 The underlying data is publicly available and includes country totals, regional totals and regional-unit records, along with building counts, storeys, volume (m³) and surface area (m²).
+
+---
 
 ## Data cleaning and preparation
 
@@ -111,12 +139,16 @@ Click the previews to inspect the source table and the analysis-ready version.
   </tr>
 </table>
 
+---
+
 ## Tools and techniques
 
 - **Microsoft Excel:** Initial source-file cleaning and tabular restructuring.
 - **Power BI Desktop:** Data modelling, relationships/filters and interactive report design.
 - **DAX:** Measures for totals, dynamic metrics and context-aware chart titles and subtitles.
 - **Bookmarks and slicers:** Navigation between geographic levels and interactive metric selection.
+
+---
 
 ## Roadmap / TODO
 
@@ -126,6 +158,8 @@ Click the previews to inspect the source table and the analysis-ready version.
 - [ ] **Enable time-based comparisons:** Compare construction activity month over month and year over year, both nationally and by region or regional unit.
 - [ ] **Expand the dashboard with time-series visuals:** Add trends and period-over-period changes for buildings, storeys, volume and surface area.
 - [ ] **Add English/Greek language switching:** Introduce a language selector that lets users switch between **English and Greek** throughout the dashboard, including visual titles, subtitles, navigation controls, metric labels and explanatory text, without changing the selected data or filters.
+
+---
 
 ## Project status
 
