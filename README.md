@@ -74,12 +74,13 @@ These figures describe the **2025 reporting period**, not a monthly trend. Geogr
 
 The table below summarizes each dashboard component. **Click any image to open the full-size preview.**
 
+
 <table>
   <thead>
     <tr>
       <th align="left" width="20%">Visual / Control</th>
-      <th align="left" width="48%">Description</th>
-      <th align="center" width="32%">Preview</th>
+      <th align="left" width="55%">Description</th>
+      <th align="center" width="25%">Preview</th>
     </tr>
   </thead>
   <tbody>
@@ -88,7 +89,7 @@ The table below summarizes each dashboard component. **Click any image to open t
       <td valign="top">Display Greece-wide totals for new buildings, storeys, total surface area (m²), and building volume (m³). Large values are expressed in millions for easier reading.</td>
       <td align="center" valign="top">
         <a href="assets/kpi-visual.png">
-          <img src="assets/kpi-visual.png" alt="KPI cards preview" width="260" />
+          <img src="assets/kpi-visual.png" alt="KPI cards preview" width="160" />
         </a>
       </td>
     </tr>
@@ -97,16 +98,16 @@ The table below summarizes each dashboard component. **Click any image to open t
       <td valign="top">Shows the selected construction indicator across regions or regional units. Darker blue shading represents higher values; the metric determines whether values represent counts, m², or m³.</td>
       <td align="center" valign="top">
         <a href="assets/map-visual.png">
-          <img src="assets/map-visual.png" alt="Geographic Shape Map preview" width="260" />
+          <img src="assets/map-visual.png" alt="Geographic Shape Map preview" width="160" />
         </a>
       </td>
     </tr>
     <tr>
       <td valign="top"><strong>Treemap</strong></td>
-      <td valign="top">Uses rectangle size to compare each region or regional unit’s relative contribution to the selected measure. Larger rectangles indicate higher values.</td>
+      <td valign="top">Uses rectangle size to compare each region or regional unit's relative contribution to the selected measure. Larger rectangles indicate higher values.</td>
       <td align="center" valign="top">
         <a href="assets/treemap-visual.png">
-          <img src="assets/treemap-visual.png" alt="Treemap preview" width="260" />
+          <img src="assets/treemap-visual.png" alt="Treemap preview" width="160" />
         </a>
       </td>
     </tr>
@@ -115,7 +116,7 @@ The table below summarizes each dashboard component. **Click any image to open t
       <td valign="top">Ranks regions or regional units from highest to lowest according to the selected indicator, making geographic differences easy to compare.</td>
       <td align="center" valign="top">
         <a href="assets/barchart-visual.png">
-          <img src="assets/barchart-visual.png" alt="Horizontal ranking chart preview" width="260" />
+          <img src="assets/barchart-visual.png" alt="Horizontal ranking chart preview" width="160" />
         </a>
       </td>
     </tr>
@@ -124,7 +125,7 @@ The table below summarizes each dashboard component. **Click any image to open t
       <td valign="top">Plots the number of buildings on the horizontal axis against total surface area (m²) on the vertical axis. Each point represents a region or regional unit. This two-metric comparison remains fixed when the metric selector changes.</td>
       <td align="center" valign="top">
         <a href="assets/scatterplot-visual.png">
-          <img src="assets/scatterplot-visual.png" alt="Scatter plot preview" width="260" />
+          <img src="assets/scatterplot-visual.png" alt="Scatter plot preview" width="160" />
         </a>
       </td>
     </tr>
@@ -133,7 +134,7 @@ The table below summarizes each dashboard component. **Click any image to open t
       <td valign="top">A Power BI bookmark navigator that switches between <strong>Regions</strong> (Περιφέρειες) and <strong>Regional Units</strong> (Περιφερειακές Ενότητες), updating the geographic detail shown in the visuals.</td>
       <td align="center" valign="top">
         <a href="assets/region-slicer.png">
-          <img src="assets/region-slicer.png" alt="Geographic level selector preview" width="260" />
+          <img src="assets/region-slicer.png" alt="Geographic level selector preview" width="160" />
         </a>
       </td>
     </tr>
@@ -142,12 +143,13 @@ The table below summarizes each dashboard component. **Click any image to open t
       <td valign="top">A button-style slicer for <strong>Buildings</strong>, <strong>Surface Area</strong>, <strong>Volume</strong>, and <strong>Storeys</strong>. The choice updates the map, treemap, and ranking chart without changing the scatter plot axes.</td>
       <td align="center" valign="top">
         <a href="assets/metric-slicer.png">
-          <img src="assets/metric-slicer.png" alt="Metric selector preview" width="260" />
+          <img src="assets/metric-slicer.png" alt="Metric selector preview" width="160" />
         </a>
       </td>
     </tr>
   </tbody>
 </table>
+
 
 ### Geographic map configuration
 
