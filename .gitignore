@@ -1,0 +1,53 @@
+# Greece Construction Activity Analysis
+# Python + PyCharm + Power BI project
+
+# --------------------------------------------------
+# Python bytecode and caches
+# --------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.cache/
+
+# --------------------------------------------------
+# Virtual environments and environment variables
+# --------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.env
+.env.*
+!.env.example
+!.env.template
+
+# --------------------------------------------------
+# Jupyter Notebook
+# --------------------------------------------------
+.ipynb_checkpoints/
+
+# --------------------------------------------------
+# PyCharm / JetBrains IDE
+# --------------------------------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# --------------------------------------------------
+# Temporary files, local logs, and database sidecars
+# --------------------------------------------------
+*.log
+logs/
+tmp/
+temp/
+*.tmp
