@@ -74,7 +74,6 @@ These figures describe the **2025 reporting period**, not a monthly trend. Geogr
 
 The table below summarizes each dashboard component. **Click any image to open the full-size preview.**
 
-
 <table>
   <thead>
     <tr>
@@ -149,7 +148,6 @@ The table below summarizes each dashboard component. **Click any image to open t
     </tr>
   </tbody>
 </table>
-
 
 ### Geographic map configuration
 
