@@ -12,9 +12,9 @@ The project transforms ELSTAT's published Excel tables into a clean, analysis-re
 - [Dashboard Previews](#dashboard-previews)
 - [Project Overview](#project-overview)
 - [Dashboard Features](#dashboard-features)
-  - [Visualizations](#visualizations)
+  - [Visualizations and Interactive Controls](#visualizations-and-interactive-controls)
   - [Geographic Map Configuration](#geographic-map-configuration)
-  - [Interactive Controls](#interactive-controls)
+  - [Dynamic Chart Labels](#dynamic-chart-labels)
 - [Data Source](#data-source)
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
   - [Original vs. Cleaned Data](#original-vs-cleaned-data)
@@ -70,13 +70,84 @@ These figures describe the **2025 reporting period**, not a monthly trend. Geogr
 
 ## Dashboard features
 
-### Visualizations
+### Visualizations and interactive controls
 
-- **KPI cards:** Show national totals for new buildings, storeys, surface area and volume. Large surface-area and volume values are displayed in millions for readability.
-- **Geographic map:** Uses colour intensity to show where the selected construction measure is concentrated. Darker shades indicate higher values; units change appropriately between building/storey counts, m² and m³.
-- **Treemap:** Compares the relative size of each geographic area's contribution to the selected indicator. Larger rectangles represent higher values.
-- **Horizontal ranking chart:** Ranks regions or regional units by the selected measure, making the highest and lowest values easy to identify.
-- **Scatter plot:** Compares **number of buildings (horizontal axis)** with **total surface area in m² (vertical axis)**. Each point represents a region or regional unit, depending on the chosen geographic level. Unlike the other three analytical charts, this comparison remains fixed when the metric selector changes.
+The table below summarizes each dashboard component. **Click any image to open the full-size preview.**
+
+<table>
+  <thead>
+    <tr>
+      <th align="left" width="20%">Visual / Control</th>
+      <th align="left" width="48%">Description</th>
+      <th align="center" width="32%">Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top"><strong>KPI cards</strong></td>
+      <td valign="top">Display Greece-wide totals for new buildings, storeys, total surface area (m²), and building volume (m³). Large values are expressed in millions for easier reading.</td>
+      <td align="center" valign="top">
+        <a href="assets/kpi-visual.png">
+          <img src="assets/kpi-visual.png" alt="KPI cards preview" width="260" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>Geographic Shape Map</strong></td>
+      <td valign="top">Shows the selected construction indicator across regions or regional units. Darker blue shading represents higher values; the metric determines whether values represent counts, m², or m³.</td>
+      <td align="center" valign="top">
+        <a href="assets/map-visual.png">
+          <img src="assets/map-visual.png" alt="Geographic Shape Map preview" width="260" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>Treemap</strong></td>
+      <td valign="top">Uses rectangle size to compare each region or regional unit’s relative contribution to the selected measure. Larger rectangles indicate higher values.</td>
+      <td align="center" valign="top">
+        <a href="assets/treemap-visual.png">
+          <img src="assets/treemap-visual.png" alt="Treemap preview" width="260" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>Horizontal ranking chart</strong></td>
+      <td valign="top">Ranks regions or regional units from highest to lowest according to the selected indicator, making geographic differences easy to compare.</td>
+      <td align="center" valign="top">
+        <a href="assets/barchart-visual.png">
+          <img src="assets/barchart-visual.png" alt="Horizontal ranking chart preview" width="260" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>Scatter plot</strong></td>
+      <td valign="top">Plots the number of buildings on the horizontal axis against total surface area (m²) on the vertical axis. Each point represents a region or regional unit. This two-metric comparison remains fixed when the metric selector changes.</td>
+      <td align="center" valign="top">
+        <a href="assets/scatterplot-visual.png">
+          <img src="assets/scatterplot-visual.png" alt="Scatter plot preview" width="260" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>Geographic level selector</strong></td>
+      <td valign="top">A Power BI bookmark navigator that switches between <strong>Regions</strong> (Περιφέρειες) and <strong>Regional Units</strong> (Περιφερειακές Ενότητες), updating the geographic detail shown in the visuals.</td>
+      <td align="center" valign="top">
+        <a href="assets/region-slicer.png">
+          <img src="assets/region-slicer.png" alt="Geographic level selector preview" width="260" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>Metric selector</strong></td>
+      <td valign="top">A button-style slicer for <strong>Buildings</strong>, <strong>Surface Area</strong>, <strong>Volume</strong>, and <strong>Storeys</strong>. The choice updates the map, treemap, and ranking chart without changing the scatter plot axes.</td>
+      <td align="center" valign="top">
+        <a href="assets/metric-slicer.png">
+          <img src="assets/metric-slicer.png" alt="Metric selector preview" width="260" />
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Geographic map configuration
 
@@ -89,11 +160,9 @@ Each map uses the corresponding boundary file so the displayed shapes match the 
 
 Geographic names are also **normalized for reliable matching** between the cleaned ELSTAT data and the TopoJSON map identifiers. User-facing labels are simplified to make Greek region and regional-unit names easier to read throughout the dashboard.
 
-### Interactive controls
+### Dynamic chart labels
 
-- **Geographic level selector:** Switches the analysis between **Regions** and **Regional Units** using Power BI bookmarks.
-- **Metric selector:** Switches between **Buildings**, **Surface Area**, **Volume** and **Storeys**. It updates the geographic map, treemap and ranking chart without changing the scatter plot's two-axis comparison.
-- **Dynamic chart titles and subtitles:** Describe the current selection and explain how each visualization should be read, including the relevant measurement units.
+Visual titles and subtitles update according to the selected geographic level and construction metric. They explain what each chart shows and how to interpret its values (including m² and m³ where applicable). The scatter plot continues to compare buildings and surface area regardless of the metric selection.
 
 ---
 
