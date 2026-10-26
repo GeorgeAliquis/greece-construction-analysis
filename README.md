@@ -13,7 +13,6 @@ The project transforms ELSTAT's published Excel tables into a clean, analysis-re
 - [Project Overview](#project-overview)
 - [Dashboard Features](#dashboard-features)
   - [Visualizations and Interactive Controls](#visualizations-and-interactive-controls)
-  - [Geographic Map Configuration](#geographic-map-configuration)
   - [Dynamic Chart Labels](#dynamic-chart-labels)
 - [Data Source](#data-source)
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
@@ -196,17 +195,6 @@ The table below summarizes each dashboard component. **Click any image to open t
     </tr>
   </tbody>
 </table>
-
-### Geographic map configuration
-
-The geographic visualization is built with Power BI's **Shape Map** visual and **two custom TopoJSON files**, one for each administrative level:
-
-- **Regions TopoJSON:** Defines the boundaries of Greece's regions (*Περιφέρειες*).
-- **Regional units TopoJSON:** Defines the more detailed boundaries of Greece's regional units (*Περιφερειακές Ενότητες*).
-
-Each map uses the corresponding boundary file so the displayed shapes match the selected level of analysis. **Power BI bookmarks** switch between the region-level and regional-unit-level map visuals, while the **metric slicer** changes the measure represented by their colour intensity. The same geographic-level switch is applied to the accompanying charts.
-
-Geographic names are also **normalized for reliable matching** between the cleaned ELSTAT data and the TopoJSON map identifiers. User-facing labels are simplified to make Greek region and regional-unit names easier to read throughout the dashboard.
 
 ### Dynamic chart labels
 
