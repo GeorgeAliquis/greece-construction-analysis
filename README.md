@@ -1,4 +1,9 @@
 # Greece Construction Activity | 2025
+
+**Documentation:** 🇬🇧 **English** | 🇬🇷 [Ελληνικά](README.el.md)
+
+---
+
 ## Overview
 An interactive **Power BI dashboard** exploring new building activity across Greece in **2025**, using publicly available data from the **Hellenic Statistical Authority (ELSTAT)**.
 
@@ -61,10 +66,10 @@ The analysis examines four measures of newly built properties:
 
 | Indicator | Greece, 2025 |
 | --- | ---: |
-| New buildings | **11,650** |
-| Storeys | **24,292** |
-| Total building volume | **20,608,577 m³** |
-| Total building surface area | **4,731,479 m²** |
+| **Buildings** | **11,650** |
+| **Storeys** | **24,292** |
+| **Total building volume** | **20,608,577 m³** |
+| **Total building surface area** | **4,731,479 m²** |
 
 These figures describe the **2025 reporting period**, not a monthly trend. Geographic comparisons use the appropriate administrative level to avoid counting the same activity twice through both region and regional-unit rows.
 
@@ -80,21 +85,21 @@ The following rankings show the three highest and lowest absolute values for eac
 
 | Indicator | Top 3 (highest first) | Bottom 3 (lowest first) |
 | --- | --- | --- |
-| **New buildings** | 1. Αττική (**2,134**)<br>2. Κρήτη (**1,509**)<br>3. Κεντρική Μακεδονία (**1,363**) | 1. Δυτική Μακεδονία (**110**)<br>2. Βόρειο Αιγαίο (**283**)<br>3. Ήπειρος (**446**) |
-| **Surface area (m²)** | 1. Αττική (**1,320,364**)<br>2. Κεντρική Μακεδονία (**698,026**)<br>3. Κρήτη (**446,073**) | 1. Δυτική Μακεδονία (**49,964**)<br>2. Βόρειο Αιγαίο (**65,194**)<br>3. Ήπειρος (**182,077**) |
-| **Building volume (m³)** | 1. Αττική (**5,781,828**)<br>2. Κεντρική Μακεδονία (**3,553,809**)<br>3. Κρήτη (**1,673,408**) | 1. Βόρειο Αιγαίο (**235,244**)<br>2. Δυτική Μακεδονία (**291,672**)<br>3. Ήπειρος (**695,689**) |
-| **Storeys** | 1. Αττική (**6,851**)<br>2. Κεντρική Μακεδονία (**2,886**)<br>3. Κρήτη (**2,656**) | 1. Δυτική Μακεδονία (**170**)<br>2. Βόρειο Αιγαίο (**462**)<br>3. Ήπειρος (**822**) |
+| **Buildings** | 1. Attica (**2,134**)<br>2. Crete (**1,509**)<br>3. Central Macedonia (**1,363**) | 1. Western Macedonia (**110**)<br>2. North Aegean (**283**)<br>3. Epirus (**446**) |
+| **Surface area (m²)** | 1. Attica (**1,320,364**)<br>2. Central Macedonia (**698,026**)<br>3. Crete (**446,073**) | 1. Western Macedonia (**49,964**)<br>2. North Aegean (**65,194**)<br>3. Epirus (**182,077**) |
+| **Building volume (m³)** | 1. Attica (**5,781,828**)<br>2. Central Macedonia (**3,553,809**)<br>3. Crete (**1,673,408**) | 1. North Aegean (**235,244**)<br>2. Western Macedonia (**291,672**)<br>3. Epirus (**695,689**) |
+| **Storeys** | 1. Attica (**6,851**)<br>2. Central Macedonia (**2,886**)<br>3. Crete (**2,656**) | 1. Western Macedonia (**170**)<br>2. North Aegean (**462**)<br>3. Epirus (**822**) |
 
 ### Regional units
 
 | Indicator | Top 3 (highest first) | Bottom 3 (lowest first) |
 | --- | --- | --- |
-| **New buildings** | 1. Ανατολική Αττική (**793**)<br>2. Θεσσαλονίκη (**636**)<br>3. Χανιά (**520**) | 1. Ιθάκη (**11**)<br>2. Ευρυτανία (**11**)<br>3. Ικαρία (**15**) |
-| **Surface area (m²)** | 1. Θεσσαλονίκη (**387,319**)<br>2. Ανατολική Αττική (**315,318**)<br>3. Βόρειος Τομέας Αθηνών (**270,013**) | 1. Ευρυτανία (**2,113**)<br>2. Ιθάκη (**2,264**)<br>3. Κάρπαθος (**3,150**) |
-| **Building volume (m³)** | 1. Θεσσαλονίκη (**2,168,014**)<br>2. Δυτική Αττική (**1,431,710**)<br>3. Ανατολική Αττική (**1,361,519**) | 1. Ευρυτανία (**6,718**)<br>2. Ιθάκη (**7,326**)<br>3. Κάρπαθος (**10,991**) |
-| **Storeys** | 1. Ανατολική Αττική (**1,645**)<br>2. Θεσσαλονίκη (**1,606**)<br>3. Βόρειος Τομέας Αθηνών (**1,226**) | 1. Γρεβενά (**19**)<br>2. Καστοριά (**20**)<br>3. Ιθάκη (**21**) |
+| **Buildings** | 1. East Attica (**793**)<br>2. Thessaloniki (**636**)<br>3. Chania (**520**) | 1. Ithaca (**11**)<br>2. Evrytania (**11**)<br>3. Ikaria (**15**) |
+| **Surface area (m²)** | 1. Thessaloniki (**387,319**)<br>2. East Attica (**315,318**)<br>3. North Athens Sector (**270,013**) | 1. Evrytania (**2,113**)<br>2. Ithaca (**2,264**)<br>3. Karpathos (**3,150**) |
+| **Building volume (m³)** | 1. Thessaloniki (**2,168,014**)<br>2. West Attica (**1,431,710**)<br>3. East Attica (**1,361,519**) | 1. Evrytania (**6,718**)<br>2. Ithaca (**7,326**)<br>3. Karpathos (**10,991**) |
+| **Storeys** | 1. East Attica (**1,645**)<br>2. Thessaloniki (**1,606**)<br>3. North Athens Sector (**1,226**) | 1. Grevena (**19**)<br>2. Kastoria (**20**)<br>3. Ithaca (**21**) |
 
-*Note: Ιθάκη and Ευρυτανία are tied at 11 new buildings. Geographic names are presented in Greek to maintain consistency with the dashboard. Rankings reflect the supplied 2025 data.*
+*Note: Ithaca and Evrytania are tied at 11 new buildings. Geographic names are presented in English for accessibility. Rankings reflect the supplied 2025 data.*
 
 ---
 
