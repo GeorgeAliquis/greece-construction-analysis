@@ -26,6 +26,7 @@ The project transforms ELSTAT's published Excel tables into a clean, analysis-re
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
   - [Original vs. Cleaned Data](#original-vs-cleaned-data)
 - [Tools and Techniques](#tools-and-techniques)
+- [Project Structure](#project-structure)
 - [Roadmap / TODO](#roadmap--todo)
 - [Project Status](#project-status)
 
@@ -241,6 +242,30 @@ Click the previews to inspect the source table and the analysis-ready version.
 - **Power BI Desktop:** Data modelling, relationships/filters and interactive report design.
 - **DAX:** Measures for totals, dynamic metrics and context-aware chart titles and subtitles.
 - **Bookmarks and slicers:** Navigation between geographic levels and interactive metric selection.
+
+---
+
+## Project Structure
+
+```text
+.
+├── assets/                         # Images and visual assets
+│
+├── dashboard/
+│   └── Greece-Construction-Analysis.pbix  # Power BI dashboard
+│
+├── data/
+│   ├── dashboard_map_utils/        # Geographic boundaries for map visualizations
+│   ├── processed/                  # Cleaned and transformed datasets
+│   └── raw/                        # Original source datasets
+│
+├── data_processing/                # Data cleaning and transformation scripts
+│
+├── .gitignore
+├── LICENSE
+├── README.el.md                    # Greek documentation
+└── README.md                       # English documentation
+```
 
 ---
 
