@@ -1,4 +1,4 @@
-# Regional Analysis of Construction Activity in Greece | 2025
+# Regional Analysis of Construction Activity in Greece
 
 **Documentation:** 🇬🇧 **English** | 🇬🇷 [Ελληνικά](README.el.md)
 
