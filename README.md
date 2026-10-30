@@ -130,7 +130,7 @@ The table below summarizes each dashboard component. **Click any image to open t
     </tr>
     <tr>
       <td valign="middle"><strong>Geographic Shape Map</strong></td>
-      <td valign="middle">Built using Power BI's <strong>Shape Map</strong> visual with two custom <strong>TopoJSON files</strong> defining Greece's regions and regional units. <strong>Bookmarks</strong> switch between geographic levels, while the <strong>metric slicer</strong> dynamically controls colour intensity, with darker shades indicating higher values. Geographic names are normalized for accurate map matching and readable Greek labels.</td>
+      <td valign="middle">Built using Power BI's <strong>Shape Map</strong> visual with two custom <strong>TopoJSON files</strong> defining Greece's regions and regional units. <strong>Bookmarks</strong> switch between geographic levels, while the <strong>metric slicer</strong> dynamically controls color intensity, with darker shades indicating higher values. Geographic names are normalized for accurate map matching and readable Greek labels.</td>
       <td align="center" valign="middle">
         <a href="assets/map-visual.png">
           <img src="assets/map-visual.png" alt="Geographic Shape Map preview" width="160" />
@@ -166,7 +166,7 @@ The table below summarizes each dashboard component. **Click any image to open t
     </tr>
     <tr>
       <td valign="middle"><strong>Geographic level selector</strong></td>
-      <td valign="middle">A Power BI bookmark navigator that switches between <strong>Regions</strong> (Περιφέρειες) and <strong>Regional Units</strong> (Περιφερειακές Ενότητες), updating the geographic detail shown in the visuals.</td>
+      <td valign="middle">A Power BI bookmark navigator that switches between <strong>Regions</strong> and <strong>Regional Units</strong>, updating the geographic detail shown in the visuals.</td>
       <td align="center" valign="middle">
         <a href="assets/region-slicer.png">
           <img src="assets/region-slicer.png" alt="Geographic level selector preview" width="160" />
@@ -207,7 +207,7 @@ The workflow starts with the original ELSTAT Excel files. **Microsoft Excel** is
 1. **Remove unnecessary metadata:** Delete the extra title rows, period notes, bilingual headings and other introductory material above the actual tabular data.
 2. **Create a consistent table:** Retain the geographic names and four numeric measures under a clear, structured set of column headers.
 3. **Add a `Category` column:** Distinguish `Country Total`, `Region` and `Regional Unit` records. This supports filtering by geographic level and prevents regional and regional-unit totals from being aggregated together.
-4. **Add a `Date` column:** Assign a date reference to the reporting period to support future time-based modelling. In the current annual extract, `2025-01-01` identifies the **2025 reporting year**; it does **not** mean the figures were observed only in January.
+4. **Add a `Date` column:** Assign a date reference to the reporting period to support future time-based modeling. In the current annual extract, `2025-01-01` identifies the **2025 reporting year**; it does **not** mean the figures were observed only in January.
 5. **Normalize geographic names:** Standardize region and regional-unit labels, remove repetitive administrative prefixes from display names and adjust Greek place-name forms where needed so labels are consistent and readable across the map, charts and selectors.
 6. **Model the data in Power BI:** Use category-aware DAX measures for national KPIs and a dynamic measure to drive the geographic map, treemap and ranking chart.
 
@@ -239,7 +239,7 @@ Click the previews to inspect the source table and the analysis-ready version.
 ## Tools and techniques
 
 - **Microsoft Excel:** Initial source-file cleaning and tabular restructuring.
-- **Power BI Desktop:** Data modelling, relationships/filters and interactive report design.
+- **Power BI Desktop:** Data modeling, relationships/filters and interactive report design.
 - **DAX:** Measures for totals, dynamic metrics and context-aware chart titles and subtitles.
 - **Bookmarks and slicers:** Navigation between geographic levels and interactive metric selection.
 
@@ -259,7 +259,7 @@ Click the previews to inspect the source table and the analysis-ready version.
 │   ├── processed/                  # Cleaned and transformed datasets
 │   └── raw/                        # Original source datasets
 │
-├── data_processing/                # Data cleaning and transformation scripts
+├── data_processing/                # Data cleaning and transformation scripts (coming soon)
 │
 ├── .gitignore
 ├── LICENSE
